@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+    name="description"
+    content="Browse auctions from Noroff students."
+    />
+
+    <title>Browse Auctions | Auction House</title>
+
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    />
+
+    
+    <link rel="stylesheet" href="src/style.css" />
+</head>
+
+<body>
+    <header id="navbar"></header>
+
+    <main>
+    <section class="browse-hero">
+        <div class="container">
+        <h1>Browse Auctions</h1>
+
+        <p>
+            Find something you like. Make a bid.
+        </p>
+        </div>
+    </section>
+
+    <section class="browse-listings">
+        <div class="container">
+
+        <div class="browse-controls">
+
+            <form id="search-form" class="search-form">
+            <label for="search-input" class="visually-hidden">
+                Search auctions
+            </label>
+
+            <input
+                type="search"
+                id="search-input"
+                class="form-control"
+                placeholder="Search auctions..."
+            />
+
+            <button type="submit" class="btn btn-primary">
+                Search
+            </button>
+            </form>
+
+            <div class="filter-controls">
+    <div>
+    <label for="tag-filter">Filter by tag</label>
+    <select id="tag-filter" class="form-select">
+        <option value="">All tags</option>
+        <option value="gaming">Gaming</option>
+        <option value="art">Art</option>
+        <option value="clothing">Clothing</option>
+        <option value="collectibles">Collectibles</option>
+        <option value="other">Other</option>
+    </select>
+    </div>
+
+    <div>
+    <label for="sort-filter">Sort by</label>
+    <select id="sort-filter" class="form-select">
+        <option value="created">Newest</option>
+        <option value="endsAt">Ending soon</option>
+    </select>
+    </div>
+</div>
+
+
+            </div>
+
+            <button
+            type="button"
+            id="clear-filters"
+            class="btn btn-secondary"
+            >
+            Clear filters
+            </button>
+
+        </div>
+
+        <div
+            id="browse-listings-container"
+            class="mt-5"
+        >
+            <p>Loading auctions...</p>
+        </div>
+
+        </div>
+    </section>
+    </main>
+
+    <footer>
+    </footer>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <script
+    type="module"
+    src="src/js/browse.js"
+    ></script>
+</body>
+</html>

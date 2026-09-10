@@ -1,1 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
 
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    />
+
+    <meta
+        name="description"
+        content="A student-only online auction platform for Noroff students."
+    />
+
+    <title>Auction House</title>
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+
+    <link
+        rel="stylesheet"
+        href="src/style.css"
+    />
+</head>
+
+
+<body>
+
+    
+        <header id="navbar"></header>
+
+
+    <main>
+
+        <section class="hero">
+
+            <img
+                src="src/img/banner.png"
+                alt=""
+                class="hero-art"
+                aria-hidden="true"
+            >
+
+
+            <div class="container hero-content">
+
+                <h1>AUCTION!</h1>
+
+
+                <p>
+                    Bid big. Find something weird.
+                    Win something wonderful.
+                </p>
+
+
+                <a
+                    href="#listings"
+                    class="btn btn-primary"
+                >
+                    Browse auctions
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <section id="listings">
+
+            <div class="container">
+
+                <div class="listing-header">
+
+                    <h2>
+                        Featured auctions
+                    </h2>
+
+
+                    <form
+                        id="search-form"
+                        class="search-form"
+                    >
+
+                        <label
+                            for="search-input"
+                            class="visually-hidden"
+                        >
+                            Search auctions
+                        </label>
+
+
+                        <input
+                            type="search"
+                            id="search-input"
+                            class="form-control"
+                            placeholder="Search auctions..."
+                        >
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary"
+                        >
+                            Search
+                        </button>
+
+                    </form>
+
+
+                    <button
+                        type="button"
+                        id="clear-search"
+                        class="btn btn-secondary"
+                    >
+                        Show all
+                    </button>
+
+                </div>
+
+
+                <div id="listings-container">
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <div id="footer"></div>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <script
+        type="module"
+        src="src/js/main.js"
+    ></script>
+
+</body>
+</html>
